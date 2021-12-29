@@ -24,3 +24,6 @@ def dfs_perm(depth, n, P):
     return result
 print(dfs_perm(0, 2, []))
 
+
+
+print([1]+[[]])

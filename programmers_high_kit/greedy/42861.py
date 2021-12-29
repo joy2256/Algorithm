@@ -8,7 +8,7 @@ def solution(n, costs):
     while len(connect) != n:
         for cost in costs:
             # 같은 tree에 있는지 확인
-            if cost[0] and cost[1] in connect:
+            if cost[0] in connect and cost[1] in connect:
                 continue
             # 같은 tree에 없을 경우 연결시켜줌
             if cost[0] in connect or cost[1] in connect:
